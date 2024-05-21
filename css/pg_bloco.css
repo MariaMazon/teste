@@ -37,10 +37,10 @@
     margin-left: 70px;
 }
 
-#aba_informacao{
+.menu-verde{
     position: absolute;
-    top: 40px;
-    height: 7%;
+    margin-left: -14px;
+    margin-top: 20px ;
 }
 
 #img_cabecalho{
@@ -183,16 +183,25 @@ main.cards section.card button:hover {
             background-image: url(../img_pgBloco/img_bloco_cabecalho_Menor.png);
         }
 
+        .menu-verde {
+            width: 80px;
+            /* margin-top: 30px ; */
+            margin-left: -10px;
+        }
+
         #retangulo {
-            display: none;
-        }
-
-        #petrobras {
-            display: none;
-        }
-
-        #aba_informacao {
-            display: none;
+            width: 480px;
+         }
+ 
+         #petrobras {
+             width: 400px;
+             margin-left: 30px;
+             margin-top: -8px;
+         }
+      }
+    @media(max-width:950px){
+        .menu-verde {
+            width: 70px;
         }
     }
 
@@ -237,6 +246,22 @@ main.cards section.card button:hover {
         #icone_informacao{
             width: 20px;
             top:235px;
+        }
+    }
+
+    @media (max-width: 510px){
+
+        #retangulo {
+           width: 380px;
+        }
+
+        #petrobras {
+            width: 320px;
+            margin-left: 20px;
+            margin-top: -8px;
+        }
+        .menu-verde {
+            width: 60px;
         }
     }
 
@@ -326,6 +351,20 @@ main.cards section.card button:hover {
     } 
     
     @media (max-width: 400px){
+
+        #retangulo {
+            width: 300px !important;
+         }
+ 
+         #petrobras {
+             width: 250px !important;
+             margin-left: 10px !important;
+             margin-top: -8px !important;
+         }
+         .menu-verde {
+             width: 50px !important;
+             margin-left: -8px;
+         }
         #escrita_cabecalho p{
             padding-top: 230px;
         }

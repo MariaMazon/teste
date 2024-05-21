@@ -9,11 +9,6 @@
     margin-left: 70px;
 }
 
-#aba_informacao{
-    position: absolute;
-    top: 40px;
-    height: 7%;
-}
 
 #img_cabecalho{
     background-image: url(../img_pgBacia/img_bacia_cabecalho.png);
@@ -36,6 +31,13 @@
     margin-left: 20px;
 }
 
+.menu-verde{
+    position: absolute;
+    margin-left: -14px;
+    margin-top: 20px ;
+}
+
+
 #escrita_cabecalho {
     display: flex;
     justify-content: space-between;
@@ -50,7 +52,7 @@
     font-family: "Poppins", sans-serif;
 }
 
-body{
+#body{
     background: #F6F9FF;
 } 
 
@@ -133,24 +135,37 @@ main.cards section.card button:hover {
         width: 400px;
       }
   }
-
-    @media (max-width: 800px){
-        #img_cabecalho{
-            background-image: url(../img_pgBacia/img_bacia_cabecalho_Menor.png);
+    
+      @media(max-width:950px){
+        .menu-verde {
+            width: 70px;
         }
 
         #retangulo {
-            display: none;
+           width: 480px;
         }
 
         #petrobras {
-            display: none;
+            width: 400px;
+            margin-left: 30px;
+            margin-top: -8px;
         }
 
         #aba_informacao {
             display: none;
         }
     }
+
+    @media (max-width: 800px){
+        .menu-verde {
+            width: 80px;
+            /* margin-top: 30px ; */
+            margin-left: -10px;
+        }
+        #img_cabecalho{
+            background-image: url(../img_pgBacia/img_bacia_cabecalho_Menor.png);
+        }
+      }
 
     @media (max-width: 770px){
         #escrita_cabecalho p{
@@ -177,6 +192,22 @@ main.cards section.card button:hover {
             width: 250px;
             padding-top: 0px;
             margin-top: 130px;
+        }
+    }
+
+    @media (max-width: 510px){
+
+        #retangulo {
+           width: 380px;
+        }
+
+        #petrobras {
+            width: 320px;
+            margin-left: 20px;
+            margin-top: -8px;
+        }
+        .menu-verde {
+            width: 60px;
         }
     }
 
@@ -250,6 +281,20 @@ main.cards section.card button:hover {
     }
 
     @media (max-width: 400px){
+
+        #retangulo {
+            width: 300px !important;
+         }
+ 
+         #petrobras {
+             width: 250px !important;
+             margin-left: 10px !important;
+             margin-top: -8px !important;
+         }
+         .menu-verde {
+             width: 50px !important;
+             margin-left: -8px;
+         }
 
         #escrita_cabecalho p{
             font-size: 16px;

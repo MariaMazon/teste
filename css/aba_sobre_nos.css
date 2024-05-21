@@ -196,8 +196,13 @@ a:hover{
 
 
 /*responsividade celular sobre nos*/
-@media(max-width:1000px) {
-    #cabecalho {
+@media(max-width:800px) {
+
+    #retangulo {
+        display: none;
+    }
+
+    #petrobras {
         display: none;
     }
 }

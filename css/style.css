@@ -69,7 +69,6 @@ h2 {
     text-justify: distribute;
     position: relative;
     right: 100px;
-
 }
 
 /* FORMA VERDE EM CIMA DO MAPA */
@@ -182,10 +181,7 @@ input[type=text]:focus {
 
 .contrast {
     filter: grayscale(1);
-
-
 }
-
 
 /* BOTOES A+A-*/
 .font-button {
@@ -202,7 +198,6 @@ input[type=text]:focus {
     font-size: 18px;
 }
 
-
 #titulo{
     font-size:55px;
     width: 100%;
@@ -210,17 +205,16 @@ input[type=text]:focus {
 
 .main-content{
     position: absolute; /* ou absolute */
-        top: 50%; /* Posicionamento vertical no centro */
-        left: 50%; /* Posicionamento horizontal no centro */
-        transform: translate(-50%, -50%); /* Centralizando o objeto */
-    
+    top: 50%; /* Posicionamento vertical no centro */
+    left: 50%; /* Posicionamento horizontal no centro */
+    transform: translate(-50%, -50%); /* Centralizando o objeto */
     margin-top: 350px
 }
+
 #rolin{
     margin-top: 10px;
-
-
 }
+
 #verde2{
     position: absolute; /* ou absolute */
     top: 110%; /* Posicionamento vertical no centro */
@@ -229,14 +223,66 @@ input[type=text]:focus {
     transform: translate(-50%, -50%); /* Centralizando o objeto */
     background-size: 1920px 440px;
     margin-top: 180px;
+    z-index: -1;
+}
+
+#verde2 .contrast{
+    position: absolute; /* ou absolute */
+    top: 110%; /* Posicionamento vertical no centro */
+    left: 50%; /* Posicionamento horizontal no centro */
+    width: 100%;
+    transform: translate(-50%, -60%); /* Centralizando o objeto */
+    background-size: 1920px 440px;
+    margin-top: 180px;
+    z-index: -1;
 }
 
 #onda{
     width: 100%;
-    margin-top: 50px;
+    margin-top: 100px;
 }
 
 svg{
-
    margin-top: 400px;
+}
+
+@media(max-width: 1630px){
+    #onda{
+        margin-top: -40px;
+    }
+}
+@media(max-width: 1390px){
+    #onda{
+        margin-top: -100px;
+    }
+}
+
+@media(max-width: 1200px){
+    #onda{
+        margin-top: -160px;
+    }
+}
+
+@media(max-width: 1150px){
+    #onda{
+        margin-top: -110px;
+    }
+}
+
+@media(max-width: 960px){
+    #onda{
+        margin-top: -150px;
+    }
+}
+
+@media(max-width: 800px){
+    #onda{
+        margin-top: 40px;
+    }
+}
+
+@media(max-width: 540px){
+    #onda{
+        margin-top: 80px;
+    }
 }

@@ -36,6 +36,12 @@
 	margin-left: 20px;
 }
 
+.menu-verde{
+    position: absolute;
+    margin-left: -14px;
+    margin-top: 20px ;
+}
+
 #escrita_cabecalho {
     display: flex;
     justify-content: space-between;
@@ -131,20 +137,27 @@ main.cards section.card button:hover {
 }
 
 /* para a tela do celular sumir a logo petrobras*/
-@media (max-width: 800px) {
-  	#retangulo {
-    	display: none;
-  	}
-  	#petrobras {
-    	display: none;
-  	}
-  	#aba_informacao{
-    	display: none;
-  	}
-  	#img_cabecalho{
+
+@media(max-width:800px){
+    .menu-verde {
+        width: 80px;
+        /* margin-top: 30px ; */
+        margin-left: -10px;
+    }
+	#retangulo {
+		width: 480px;
+	 }
+
+	 #petrobras {
+		 width: 400px;
+		 margin-left: 30px;
+		 margin-top: -8px;
+	 }
+
+	#img_cabecalho{
 		background-image: url(../img_pgCampo/img_campo_cabecalho_telaMenor.png);
   	}
-}
+  }
 
 @media (max-width: 660px) {
 	#escrita_cabecalho p{
@@ -166,6 +179,22 @@ main.cards section.card button:hover {
 		margin-top: 50px;
 		padding-top: 0;
 		margin-top: 235px;
+	}
+}
+
+@media (max-width: 510px){
+
+	#retangulo {
+	   width: 380px;
+	}
+
+	#petrobras {
+		width: 320px;
+		margin-left: 20px;
+		margin-top: -8px;
+	}
+	.menu-verde {
+		width: 60px;
 	}
 }
 
@@ -205,6 +234,21 @@ main.cards section.card button:hover {
 	}
 }
 @media (max-width: 400px) {
+
+	#retangulo {
+		width: 300px !important;
+	 }
+
+	 #petrobras {
+		 width: 250px !important;
+		 margin-left: 10px !important;
+		 margin-top: -8px !important;
+	 }
+	 .menu-verde {
+		 width: 50px !important;
+		 margin-left: -8px;
+	 }
+	 
 	main.cards section.card{
 		max-width: 250px;
         max-height: 202px;
@@ -246,4 +290,3 @@ main.cards section.card button:hover {
 		font-size: 38px;
 	}
 }
-

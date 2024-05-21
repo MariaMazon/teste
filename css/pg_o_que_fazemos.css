@@ -226,7 +226,7 @@ body{
 
 @media(max-width:880px){
     #cabecalho{ 
-        background-image: url(img_o_que_fazemos/img_cabecalhoNova2.png);
+        background-image: url(../img_o_que_fazemos/img_cabecalhoNova2.png);
     }
     .texto1{
         margin-left: 60px;
@@ -265,9 +265,7 @@ body{
     #petrobras {
       display: none;
     }
-    #tres_linhas {
-      display: none;
-    }
+
     #bola4{
         left: 480px !important;
     }

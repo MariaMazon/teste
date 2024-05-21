@@ -6,7 +6,8 @@ section.card {
   box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
   align-items: center;
   text-align: center;
-  transform: translate(100px, -50px);
+  transform: translate(100px, 1300px);
+  margin-bottom: 150px;
 }
 
 section.card #titulo_sugestao{
@@ -27,7 +28,8 @@ section.card #titulo_sugestao h2{
   font-family: "Poppins", sans-serif;
   width: 140px;
   height: 40px;
-  margin: 0 0 0 50px;
+  margin: 0 0 0 130px;
+  padding: 0px;
 }
 
 section.card #texto_sugestao p{
@@ -40,6 +42,7 @@ section.card #texto_sugestao p{
 
 .mapa_brasil {
   align-items: center;
+  z-index: 1;
 }
   
 .bacias path:hover {
@@ -61,7 +64,7 @@ z-index: 999;
   position: fixed;
   top: 100%;
   display: none;
-  transform: translate(400px, -500px); 
+  transform: translate(400px, -400px); 
   width: 300px;
   height: 250px;
   background-color: black;
@@ -73,7 +76,19 @@ z-index: 999;
   position: fixed;
   top: 100%;
   display: none;
-  transform: translate(400px, -500px); 
+  transform: translate(400px, -400px); 
+  width: 300px;
+  height: 250px;
+  background-color: black;
+  border-radius: 20px 20px 0 0;
+  transition: height 5s;
+}
+
+.cards_bacias.contrast {
+  position: fixed;
+  top: 2000px;
+  display: none;
+  transform: translate(400px, -400px); 
   width: 300px;
   height: 250px;
   background-color: black;
@@ -221,7 +236,7 @@ z-index: 999;
 }
 
 #Card_Pernambuco_Paraiba{
-  background-image: url(img_cardsBacias/Pernambuco_Paraíba.png);
+  background-image: url(../img_cardsBacias/Pernambuco_Paraíba.png);
 }
 
 #Card_Pernambuco_Paraiba_Terra{
@@ -331,49 +346,49 @@ z-index: 999;
 
 @media (max-width: 1630px){
   .cards_bacias {
-    transform: translate(300px, -500px); 
+    transform: translate(260px, -400px); 
   }
   .cards_bacias_tm {
-    transform: translate(300px, -500px); 
+    transform: translate(260px, -400px); 
   }
 }
 
 @media (max-width: 1400px){
   .cards_bacias {
-    transform: translate(200px, -500px); 
+    transform: translate(160px, -400px); 
   }
   .cards_bacias_tm {
-    transform: translate(200px, -500px); 
+    transform: translate(160px, -400px); 
   }
 }
 
 @media (max-width: 1200px){
   .cards_bacias {
-    transform: translate(100px, -500px); 
+    transform: translate(100px, -400px); 
   }
   .cards_bacias_tm {
-    transform: translate(100px, -500px); 
+    transform: translate(100px, -400px); 
   }
 }
 
-@media (max-width: 1000px){
+@media (max-width: 1080px){
   .cards_bacias {
-    transform: translate(50px, -500px); 
+    transform: translate(50px, -400px); 
   }
   .cards_bacias_tm {
-    transform: translate(50px, -500px); 
+    transform: translate(50px, -400px); 
   }
 }
 
-@media (max-width: 900px){
+@media (max-width: 980px){
   .cards_bacias {
-    transform: translate(30px, -500px);
+    transform: translate(20px, -400px);
     width: 250px;
     height: 80px;
   }
 
   .cards_bacias_tm {
-    transform: translate(30px, -500px);
+    transform: translate(20px, -400px);
     width: 250px;
     height: 80px;
   }
@@ -419,28 +434,28 @@ z-index: 999;
   }
 
   section.card {
-    transform: translate(30px, -50px);
+    transform: translate(20px, 1230px);
   }
 }
 
-@media(max-width: 750px){
+@media(max-width: 800px){
   .cards_bacias {
-    transform: translate(430px, -270px);
+    transform: translate(20px, -360px);
   }
 
   .cards_bacias_tm {
-    transform: translate(430px, -270px);
+    transform: translate(20px, -360px);
   }
 
-  section.card{
-    transform: translate(10px, -250px);
+  section.card {
+    transform: translate(20px, 550px);
   }
 }
 
-@media (max-width: 700px){
-  section.card{
+@media (max-width: 720px){
+  section.card {
     width: 210px;
-    transform: translate(10px, -250px);
+    transform: translate(20px, 550px);
   }
 
   section.card #titulo_sugestao{
@@ -451,7 +466,7 @@ z-index: 999;
     font-size: 18px;
     width: 130px;
     height: 40px;
-    margin: 0 0 0 40px;
+    margin: 0 0 0 120px;
   }
 
   section.card #texto_sugestao p{
@@ -469,10 +484,24 @@ z-index: 999;
   }
 }
 
-@media (max-width: 600px){
+@media (max-width: 700px){
+  .cards_bacias {
+    transform: translate(5px, -380px);
+    width: 220px;
+  }
+
+  .cards_bacias_tm {
+    transform: translate(5px, -380px);
+    width: 220px;
+  }
+
+  .bacia_br {
+    width: 220px;
+  }
+
   section.card{
     width: 180px;
-    transform: translate(5px, -250px);
+    transform: translate(5px, 550px);
   }
 
   section.card #titulo_sugestao{
@@ -480,7 +509,7 @@ z-index: 999;
   }
 
   section.card #titulo_sugestao h2{
-    margin: 0 0 0 25px;
+    margin: 0 0 0 110px;
   }
 
   section.card #titulo_sugestao img{
@@ -494,15 +523,57 @@ z-index: 999;
   }
 }
 
+@media(max-width: 620px){
+  .cards_bacias {
+    transform: translate(370px, -860px);
+    width: 220px;
+  }
+
+  .cards_bacias_tm {
+    transform: translate(370px, -860px);
+    width: 220px;
+  }
+}
+
+@media(max-width: 595px){
+  .cards_bacias {
+    transform: translate(345px, -860px);
+  }
+
+  .cards_bacias_tm {
+    transform: translate(345px, -860px);
+  }
+}
+
+@media(max-width: 575px){
+  .cards_bacias {
+    transform: translate(330px, -860px);
+  }
+
+  .cards_bacias_tm {
+    transform: translate(330px, -860px);
+  }
+}
+
+@media(max-width: 555px){
+  .cards_bacias {
+    transform: translate(270px, -860px);
+  }
+
+  .cards_bacias_tm {
+    transform: translate(270px, -860px);
+  }
+}
+
 @media(max-width: 500px){
   section.card{
     width: 140px;
-    transform: translate(5px, -260px);
+    transform: translate(10px, 550px);
   }
 
   section.card #titulo_sugestao h2{
     width: 120px;
-    margin: 0 0 0 10px;
+    margin: 0 0 0 95px;
   }
 
   section.card #texto_sugestao p{
@@ -511,17 +582,14 @@ z-index: 999;
   }
 
   .cards_bacias {
-    transform: translate(5px, -320px);
-    width: 220px;
+    transform: translate(170px, -860px);
   }
 
   .cards_bacias_tm {
-    transform: translate(5px, -320px);
-    width: 220px;
+    transform: translate(170px, -860px);
   }
 
   .bacia_br {
-    width: 220px;
     height: 43px;
   }
 
@@ -553,13 +621,13 @@ z-index: 999;
 
 @media(max-width: 400px){
   section.card{
-    transform: translate(10px, -620px);
+    transform: translate(80px, 500px);
     height: 100px;
   }
 
   section.card #titulo_sugestao h2{
     width: 120px;
-    margin: 0 0 0 10px;
+    margin: 0 0 0 95px;
     font-size: 16px;
   }
 
@@ -569,12 +637,12 @@ z-index: 999;
   }
 	
    .cards_bacias {
-    transform: translate(10px, -360px);
+    transform: translate(50px, -775px);
     width: 200px;
   }
 
   .cards_bacias_tm {
-    transform: translate(10px, -360px);
+    transform: translate(50px, -775px);
     width: 200px;
   }
 

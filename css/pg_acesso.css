@@ -156,10 +156,6 @@ body {
     #petrobras {
         display: none;
     }
-
-    #tres_linhas {
-        display: none;
-    }
 }
 
 @media (max-width:1700px) {
@@ -703,13 +699,6 @@ body {
 }
 
 @media (max-width: 380px) {
-    #segTexto1 {
-        /* font-size: 80%; */
-    }
-
-    #segTexto2 {
-        /* font-size: 80%; */
-    }
 
     #segTexto3 {
         /* font-size: 80%; */

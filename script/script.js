@@ -88,7 +88,7 @@ html.removeAttribute('class','corpo')
 });
 
 
-var html1 = document.querySelector('html')
+var html1 = document.querySelector('body')
 const btnletra1=document.querySelector('#btnAcessibilidadeletra1');
 
 console.log(btnletra1)
@@ -138,7 +138,7 @@ function redirecionar() {
   var valorInputPesquisa = document.getElementById("pesquisa").value;
 
   if (valorInputPesquisa != ""){
-    window.location.href = "outra_pagina.html";
+    window.location.href = "pg_campo.html";
   }
 
   document.getElementById("pesquisa").value = "";
@@ -150,7 +150,7 @@ function redirecionar1() {
   var valorInputPesquisa = document.getElementById("pesquisa1").value;
 
   if (valorInputPesquisa != ""){
-    window.location.href = "outra_pagina.html";
+    window.location.href = "pg_campo.html";
   }
 
   document.getElementById("pesquisa1").value = "";
