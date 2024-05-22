@@ -1,5 +1,3 @@
-
-
 //LINGUAGEM
 function changeColor(side) {
   var leftButton = document.getElementById('leftButton');
@@ -28,30 +26,6 @@ function changeColor(side) {
   }
 }
 
-//CONTRASTE
-let isContrast = false;
-
-function toggleContrast() {
-  const button = document.querySelector('.circle-button');
-  const elements = document.querySelectorAll(':not(button)');
-
-  isContrast = !isContrast;
-
-  elements.forEach((element) => {
-    if (isContrast) {
-      element.classList.add('contrast');
-    } else {
-      element.classList.remove('contrast');
-    }
-  });
-
-  document.body.style.filter = isContrast ? 'grayscale(1)' : 'grayscale(0)';
-
-  button.style.background = isContrast
-    ? 'linear-gradient(to right, white 50%, black 50%)'
-    : 'linear-gradient(to right, black 50%, white 50%)';
-}
-
 //A+A-
 function increaseFontSize() {
   var titulo = document.getElementById('titulo');
@@ -72,46 +46,58 @@ function decreaseFontSize() {
 // parte gustavo
 
 
-const btn4=document.querySelector('#btnAcessibilidadecontraste1');
+const btn4 = document.querySelector('#btnAcessibilidadecontraste1');
 var html = document.querySelector('html')
 
-console.log(btn4);
+const btncontraste = document.querySelector('.circle-button');
 
-btn4.addEventListener('click' , () => { 
-    
-if(btn4.checked){
+var contraste = false;
+
+btncontraste.addEventListener('click',()=>{
+  contraste = !contraste;
+  if (contraste) {
     html.setAttribute('class', 'corpo');
-}
-else{
-html.removeAttribute('class','corpo')
-}
+  } 
+  else {
+    html.removeAttribute('class', 'corpo')
+  }
+})
+
+btn4.addEventListener('click', () => {
+  if (btn4.checked) {
+    html.setAttribute('class', 'corpo');
+  } 
+  else {
+    html.removeAttribute('class', 'corpo')
+  }
 });
 
 
+
 var html1 = document.querySelector('body')
-const btnletra1=document.querySelector('#btnAcessibilidadeletra1');
+const btnletra1 = document.querySelector('#btnAcessibilidadeletra1');
 
 console.log(btnletra1)
-btnletra1.addEventListener('click' , () => { 
-    
-if(btnletra1.checked){
+btnletra1.addEventListener('click', () => {
+
+  if (btnletra1.checked) {
     html1.setAttribute('class', 'letra');
-}
-else{
-html1.setAttribute('class','titulo');
-}
+  }
+  else {
+    html1.setAttribute('class', 'titulo');
+  }
 })
 
-const btnletra2=document.querySelector('#btnAcessibilidadeletra2');
+const btnletra2 = document.querySelector('#btnAcessibilidadeletra2');
 console.log(btnletra2)
-btnletra2.addEventListener('click' , () => { 
+btnletra2.addEventListener('click', () => {
 
-if(btnletra2.checked){
+  if (btnletra2.checked) {
     html1.setAttribute('class', 'letra2');
-}
-else{
-html1.setAttribute('class','titulo');
-}
+  }
+  else {
+    html1.setAttribute('class', 'titulo');
+  }
 })
 
 var titulo = document.querySelector("#titulo");
@@ -120,15 +106,15 @@ var botao = document.querySelector("#troca-titulo");
 var botaopt = document.querySelector("#troca-titulo1");
 var btningcel = document.querySelector('#trocass12')
 
-btningcel.addEventListener("click", function(){
-    if(btningcel.checked){  
-        titulo.innerHTML = "Oil is the energy <br/> that moves the <br/> world!";  
-        tituloCelular.innerHTML = "You are on: PETROBRAS WEBSITE"
-    }
-    else{
-            titulo.innerHTML = "O petróleo é a <br/> energia que move o <br/> mundo!";  
-            tituloCelular.innerHTML = "Você está em: SITE PETROBRAS"    
-    }   
+btningcel.addEventListener("click", function () {
+  if (btningcel.checked) {
+    titulo.innerHTML = "Oil is the energy <br/> that moves the <br/> world!";
+    tituloCelular.innerHTML = "You are on: PETROBRAS WEBSITE"
+  }
+  else {
+    titulo.innerHTML = "O petróleo é a <br/> energia que move o <br/> mundo!";
+    tituloCelular.innerHTML = "Você está em: SITE PETROBRAS"
+  }
 })
 
 
@@ -137,7 +123,7 @@ btningcel.addEventListener("click", function(){
 function redirecionar() {
   var valorInputPesquisa = document.getElementById("pesquisa").value;
 
-  if (valorInputPesquisa != ""){
+  if (valorInputPesquisa != "") {
     window.location.href = "pg_campo.html";
   }
 
@@ -149,7 +135,7 @@ function redirecionar() {
 function redirecionar1() {
   var valorInputPesquisa = document.getElementById("pesquisa1").value;
 
-  if (valorInputPesquisa != ""){
+  if (valorInputPesquisa != "") {
     window.location.href = "pg_campo.html";
   }
 
