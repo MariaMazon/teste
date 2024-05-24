@@ -82,7 +82,8 @@
     font-family: "Poppins", sans-serif;
 }
 
-body{
+#body_pg_bloco{
+    width: 100vw;
     background: #F6F9FF;
 } 
 

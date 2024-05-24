@@ -38,9 +38,9 @@
 
    
     #divs1{
-        width: 100vh;
-        height: 100vh;
-        margin-left: 24%;
+        width: 100%;
+        height: 100%;
+        /* margin-left: 24%; */
         align-items: center;
     }
 
@@ -60,7 +60,7 @@
 
    
     #divs1{
-        width: 100vh;
+        width: 100vw;
         height: 100vh;
         margin-left: 22%;
         align-items: center;
@@ -82,7 +82,7 @@
 
    
     #divs1{
-        width: 100vh;
+        width: 100vw;
         height: 100vh;
         margin-left: 20%;
         align-items: center;
@@ -104,7 +104,7 @@
 
    
     #divs1{
-        width: 100vh;
+        width: 100vw;
         height: 100vh;
         margin-left: 17%;
         align-items: center;
@@ -126,7 +126,7 @@
 
    
     #divs1{
-        width: 100vh;
+        width: 100vw;
         height: 100vh;
         margin-left: 12%;
         align-items: center;
@@ -148,7 +148,7 @@
 
    
     #divs1{
-        width: 100vh;
+        width: 100vw;
         height: 100vh;
         margin-left: 9%;
         align-items: center;
@@ -170,7 +170,7 @@
 
    
     #divs1{
-        width: 100vh;
+        width: 100vw;
         height: 100vh;
         margin-left: 6%;
         align-items: center;
@@ -192,7 +192,7 @@
 
    
     #divs1{
-        width: 100vh;
+        width: 100vw;
         height: 100vh;
         margin-left: 4%;
         align-items: center;
@@ -214,7 +214,7 @@
 
    
     #divs1{
-        width: 100vh;
+        width: 100vw;
         height: 100vh;
         margin-left: 2%;
         align-items: center;
@@ -236,7 +236,7 @@
 
    
     #divs1{
-        width: 100vh;
+        width: 100vw;
         height: 100vh;
         margin-left: 0%;
         align-items: center;
